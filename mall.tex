@@ -1,0 +1,78 @@
+\documentclass[a4paper]{article}
+
+\usepackage[T1]{fontenc}                % För svenska bokstäver
+\usepackage[swedish]{babel}             % För svensk avstavning och svenska
+                                        % rubriker (t ex "innehållsförteckning)
+\usepackage[utf8]{inputenc}
+\usepackage{ae}
+\usepackage{graphics}
+
+\usepackage{fancyvrb}
+\fvset{tabsize=4}
+\fvset{fontsize=\small}
+
+\title{Dokumentnamn}					% Fyll i dokumentnamn
+\author{Grupp 11}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+\large{Version X.Y}   			% Fyll i version!
+\ \\[1cm]
+\hrule
+\ \\[1cm]
+\begin{minipage}{0.5\textwidth}
+	\begin{flushleft} \large
+		\textbf{Gruppmedlemmar:} \\
+		Johan Lundström, \emph{proj. ledare} \\
+		Daniel Nilsson \\
+		Mazdak Farzone \\
+		Sofia Mattsson \\
+		Björn Lennernäs \\
+		Kim Smidje
+	\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+	\begin{flushright} \large
+		\textbf{Grupphandledare:} \\
+		Björn Regnell \\	
+		\ \\				
+		\textbf{Dokumentansvarig:} \\
+		Karl Svensson					% Fyll i dokumentansvarig
+	\end{flushright}
+\end{minipage}
+\end{center}
+
+\clearpage
+
+\tableofcontents
+\newpage
+
+%
+%		BÖRJA SKRIV HÄR
+%
+
+\section{Ändringshistorik} % Change history
+
+\begin{tabular}{r|l|l|p{7cm}}
+\textbf{Vers.}		&	\textbf{Datum}	&	\textbf{Ansv.}	&	\textbf{Beskrivning} \\
+\hline
+1.0			&	0804XX	&	JL			&	Baseline 		% Ändra här
+\end{tabular}
+
+
+% Här tar vi bort vanliga titeln och använder egen
+% för att få med referenserna i innehållsförteckningen
+\section{Referenser}
+\renewcommand*{\refname}{}
+\vspace{-1cm} % Återställ utrymme
+
+\begin{thebibliography}{99}
+% \bibitem{compnetw} Stallings, William (2004). \emph{Computer Networking with Internet Protocols and Technology} Intl. ed. Upper Saddle River, NJ: Prentice Hall.
+\end{thebibliography}
+
+
+\end{document}                 % The input file ends with this command.
